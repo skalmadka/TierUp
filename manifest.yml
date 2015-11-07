@@ -1,0 +1,9 @@
+applications:
+- name:    TierUp
+  host:    TierUp
+  memory:  512M
+  command: npm start
+  domain: mybluemix.net
+  instances: 1
+  env:
+    NODE_ENV: production
