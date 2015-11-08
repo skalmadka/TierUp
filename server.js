@@ -3,7 +3,7 @@ var express = require("express"),
 
 var port = process.env.VCAP_APP_PORT || 8080;
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/app'));
 
 app.get("/hello", function (request, response) {
     response.writeHead(200, {"Content-Type": "text/plain"})
