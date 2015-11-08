@@ -10,6 +10,8 @@ app.get("/hello", function (request, response) {
     response.end("Hello World!\n");
 });
 
+app.use('/api', require('./api'));
+
 app.listen(port);
 
 require("cf-deployment-tracker-client").track();

@@ -4,6 +4,7 @@
   "description": "TierUp HackDuke 2015",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.14.1",
     "cf-deployment-tracker-client": "*",
     "commander": "^2.6.0",
     "express": "~4.x",
@@ -14,7 +15,6 @@
   "main": "server.js",
   "scripts": {
     "postinstall": "bower install",
-
     "prestart": "npm install",
     "start": "node server.js"
   },
