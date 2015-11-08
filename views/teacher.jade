@@ -1,19 +1,4 @@
 extends layout
 
 block content
-   ul.nav.nav-tabs
-      li.active(role='features')
-         a(href='/') Search
-      li(role='features')
-         a(href='/teacher') Teacher
-      li(role='features')
-         a(href='/student') Student
-
-   h1(align='left') Search
-   form(align="center",method='POST', action='/api/search')
-      .form-group.col-md-5
-         input.form-control(type='text', name='searchQuery', placeholder='Search Query')
-         br
-         input.form-control(type='text', name='userid', placeholder='Unity ID')
-         br
-         button.btn.btn-primary.btn-sm(type='submit', name='submit', value='Search') Search
+   h1 Teacher
