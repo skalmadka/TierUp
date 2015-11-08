@@ -7,10 +7,10 @@ var router = express.Router();
 router.get('/', function(req, res) {
     database.Question.find({}, function(err, questions) {
         if (err) {
-            res.sendStatus(500);
+            res.status(500);
         }
         else {
-            res.sendStatus(200).json(questions);
+            res.status(200).json(questions);
         }
     });
 });
@@ -20,10 +20,10 @@ router.put('/', bodyParser.json(), function(req, res) {
 
     question.save(function(err) {
         if (err) {
-            res.sendStatus(500);
+            res.status(500);
         }
         else {
-            res.sendStatus(200);
+            res.status(200);
         }
     });
 });
