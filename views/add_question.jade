@@ -1,0 +1,24 @@
+extends layout
+
+block content
+
+
+    form(align="center",method='POST', action='/question_list')
+      .form-group.col-md-5
+          input#input_field.form-control(name='question', placeholder='Question')
+          input#input_field.form-control(name='choices0', placeholder='Choices 1')
+          input#input_field.form-control(name='choices1', placeholder='Choices 2')
+          input#input_field.form-control(name='choices2', placeholder='Choices 3')
+          input#input_field.form-control(name='choices3', placeholder='Choices 4')
+          input#input_field.form-control(name='answer', placeholder='Answer')
+          input#input_field.form-control(name='subject', placeholder='Subject')
+          input#input_field.form-control(name='tier', placeholder='Tier')
+          input#input_field.form-control(name='tag0', placeholder='Tag 1')
+          input#input_field.form-control(name='tag1', placeholder='Tag 2')
+          input#input_field.form-control(name='tag2', placeholder='Tag 3')
+          input#input_field.form-control(name='practice', placeholder='Practice')
+
+
+      button.btn.btn-primary.btn-sm(type='submit', name='submit', value='submit_cancel') Cancel
+      button.btn.btn-primary.btn-sm(type='submit', name='submit', value='submit_add_done') Add and Done
+      button.btn.btn-primary.btn-sm(type='submit', name='submit', value='submit_add_more') Add More
