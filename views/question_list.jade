@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    form(align="center",method='GET', action='/add_question')
+      .form-group.col-md-5
+        button.btn.btn-primary.btn-sm(type='submit', name='submit', value='submit') Add Question
+    br
+    ol
+        - for (var i = 0; i < questions.length; ++i) {
+            li= JSON.stringify(questions)
+        - }
