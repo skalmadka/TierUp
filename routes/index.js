@@ -70,4 +70,12 @@ router.get('/student', function(req, res, next) {
   res.render('student', { title: 'Student' });
 });
 
+router.get('/student_asses_test', function(req, res, next) {
+  res.render('student_asses_test', { title: 'Student Assessment Test' });
+});
+
+router.get('/student_practice_test', function(req, res, next) {
+  res.render('student_practice_test', { title: 'Student Practice Test' });
+});
+
 module.exports = router;
